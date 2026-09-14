@@ -1,12 +1,14 @@
 .container {
     display: flex;
     width: 45%;
-    margin: 30px 500px;
+    margin: 30px auto;
+    min-width: 650px; 
+    max-width: 900px;
     border: 2px solid black;
     height: 840px;
 }
 
-.left-side {
+aside {
     border-right: 3px solid black;
     display: flex;
     flex-direction: column;
@@ -15,7 +17,7 @@
     background-color: #ebc156;
 }
 
-.right-side {
+main {
     display: flex;
     flex-direction: column;
     width: 70%;
@@ -44,7 +46,8 @@ img {
     overflow: hidden;   
 }
 
-.name {
+h1 {
+    margin: 0;
     border-bottom: 5px solid black;
     padding-top: 20;
     background-color: #f4e8c1;
@@ -64,6 +67,7 @@ p {
 }
 
 .topic {
+    padding-top: 10px;
     font-size: 20px;
     font-weight: bolder;
     padding-left: 20px;
